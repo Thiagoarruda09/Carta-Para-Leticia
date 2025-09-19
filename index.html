@@ -2,10 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carta para Leticia</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
-    <h1>oi</h1>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Querida Lane <3</strong>
+                        <p>
+                            Sinto muito por ter magoado você mais uma vez. Amo muito você e a relação que estamos construindo juntos, infelizmente tropecei ontem mas continuo te amando e tentando todo dia mais ser melhor para nós dois. <br>
+                            Com amor, Thigas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart animate__animated animate__heartBeat"></div>
+        </div>
+    </div>
+    <script>
+        alert('Esse é meu pedido de desculpas virtual, clique no coração para ler a cartinha. Amo você!')
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
 </body>
 </html>
